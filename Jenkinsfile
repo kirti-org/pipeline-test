@@ -11,8 +11,8 @@ stages          //it contains stages
  stage ('build the code')
  { steps { sh 'echo code-is-building' } }
 
- stage (' deploy the code')
- { steps { sh 'echo deploying-the-code } }
+ stage ('deploy the code')
+ { steps { sh 'echo deploying the app code' } }
 
 
  
