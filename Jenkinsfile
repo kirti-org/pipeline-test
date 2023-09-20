@@ -9,7 +9,10 @@ stages          //it contains stages
  { steps { sh 'echo Hello_Jenkins' } }    // it tell jenkins
 
 stage ('build the code')
- { steps { sh 'echo code-is-building' }}
+ { steps { sh 'echo code-is-building' } }
+
+stage (' deploy the code')
+ { steps { sh 'echo deploying-the-code } }
 
 
  
