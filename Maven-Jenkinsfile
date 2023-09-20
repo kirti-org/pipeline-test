@@ -1,0 +1,16 @@
+pipeline
+{
+    agent any
+    stages
+    {
+         stage ('scm checkout or download the code')
+         { steps { git branch: 'main', url: 'https://github.com/kirti-org/pipeline-test' } }
+
+
+
+
+
+
+    }
+
+}
