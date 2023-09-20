@@ -6,9 +6,10 @@ pipeline
          stage ('scm checkout or download the code')
          { steps { git branch: 'main', url: 'https://github.com/kirti-org/pipeline-test' } }
 
-
-
-
+         stage ('complie the code' )
+         {steps { withMaven(globalMavenSettingsConfig: '', jdk: 'LocalJDK', maven: 'LocalMVN', mavenSettingsConfig: '', traceability: true) 
+           { sh 'mvn conmpile' } 
+        }}
 
 
     }
