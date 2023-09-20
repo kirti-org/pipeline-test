@@ -7,7 +7,7 @@ pipeline
          { steps { git branch: 'main', url: 'https://github.com/kirti-org/pipeline-test' } }
 
          stage ('complie the code' )
-         {steps { withMaven(globalMavenSettingsConfig: '', jdk: 'LocalJDK', maven: 'LocalMVN', mavenSettingsConfig: '', traceability: true) 
+         {steps { withMaven(globalMavenSettingsConfig: '096b3d34-4174-4d2d-9449-74a324e547ea', jdk: 'LocalJDK', maven: 'LocalMVN', mavenSettingsConfig: '95a97751-59a5-42bd-b14d-7da3f521f542', traceability: true) 
            { sh 'mvn conmpile' } 
         }}
 
